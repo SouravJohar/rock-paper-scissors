@@ -14,7 +14,7 @@ REV_CLASS_MAP = {
 def mapper(val):
     return REV_CLASS_MAP[val]
 
-
+#Calculate the Moves 
 def calculate_winner(move1, move2):
     if move1 == move2:
         return "Tie"
@@ -22,19 +22,19 @@ def calculate_winner(move1, move2):
     if move1 == "rock":
         if move2 == "scissors":
             return "User"
-        if move2 == "paper":
+        elif move2 == "paper":
             return "Computer"
 
     if move1 == "paper":
         if move2 == "rock":
             return "User"
-        if move2 == "scissors":
+        elif move2 == "scissors":
             return "Computer"
 
     if move1 == "scissors":
         if move2 == "paper":
             return "User"
-        if move2 == "rock":
+        elif move2 == "rock":
             return "Computer"
 
 
@@ -44,6 +44,7 @@ cap = cv2.VideoCapture(0)
 
 prev_move = None
 
+#Repeat the loop Until the condition becomes false 
 while True:
     ret, frame = cap.read()
     if not ret:
@@ -97,3 +98,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+#End
