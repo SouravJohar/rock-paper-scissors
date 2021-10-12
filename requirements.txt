@@ -11,7 +11,7 @@ keras-squeezenet==0.4
 Markdown==3.1.1
 mock==3.0.5
 numpy==1.16.3
-opencv-python==4.1.0.25
+opencv-python==4.1.1.26
 protobuf==3.7.1
 PyYAML==5.1
 scikit-learn==0.21.2
