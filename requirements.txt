@@ -3,7 +3,7 @@ astor==0.8.0
 gast==0.2.2
 grpcio==1.21.1
 h5py==2.9.0
-joblib==0.13.2
+joblib==1.2.0
 Keras==2.1.1
 Keras-Applications==1.0.7
 Keras-Preprocessing==1.0.9
